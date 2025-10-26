@@ -1,0 +1,119 @@
+:root {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  --background-100: hsla(0, 0%, 10%, 100%);
+  --background-200: hsl(0, 0%, 20%);
+  --background-300: hsl(0, 0%, 30%);
+
+  --foreground-100: hsl(0,0%,80%);
+  --foreground-200: hsl(0,0%,60%);
+
+  --error: hsl(345,100%,65%);
+  --success: hsl(150,100%,65%);
+  --warning: hsl(40,100%,65%);
+  --info: hsl(200,100%,65%);
+
+  --checkbox-size: 2em;
+  --checkmark-offset: 0.1em;
+}
+
+body {
+  margin: 0;
+  padding: 0.2em;
+  background-color: var(--background-100);
+  color: var(--foreground-100);
+}
+
+h1 {}
+
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .todo__done {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--checkbox-size);
+      height: var(--checkbox-size);
+      isolation: isolate;
+      overflow: none;
+
+
+      input[type="checkbox"] {
+        appearance: none;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid var(--foreground-100);
+        cursor: pointer;
+        border-radius: calc(var(--checkbox-size) * 0.2);
+      };
+
+      .checkmark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: var(--checkmark-offset);
+        transform: scale(1.1);
+        color: var(--foreground-100);
+        stroke-dasharray: 20;
+        stroke-dashoffset: 20;
+        transition: all 300ms ease-in-out;
+        pointer-events: none;
+        overflow: none;
+
+        .border {
+          stroke: var(--background-100);
+          stroke-width: 0.4em;
+        }
+      };
+
+      input[type="checkbox"]:checked ~.checkmark {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    input[type="text"] {};
+
+    button {
+      padding: 0;
+      width: 2.5em;
+      height: 2.5em;
+
+      svg {
+        pointer-events: none;
+      }
+    };
+  }
+}
+
+.todo__confirm {}
+
+.todo__delete {}
+
+.todo__edit {}
+
+.todo__cancel {}
+
+
+form {
+  label {
+    span {};
+    input {};
+  }
+  button {}
+}
+

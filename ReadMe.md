@@ -1,1 +1,43 @@
 # T.L.E.F - Todo List in All Framework
+
+## Frameworks
+
+- [ ] javascript es5
+- [ ] javascript es6
+- [ ] jquery
+- [ ] web components
+- [ ] alpine.js
+- [ ] react
+- [ ] vue.js 3
+- [ ] vue.js 2
+- [ ] angular
+- [ ] preact
+- [ ] svelte
+- [ ] lit
+- [ ] solid
+- [ ] qwik
+- [ ] stencil
+- [ ] ember.js
+- [ ] astro
+- [ ] elm
+- [ ] aureliajs
+- [ ] stimulus
+- [ ] unpoly
+- [ ] mithril.js
+- [ ] marko
+- [ ] glimmer.js
+- [ ] ext js
+- [ ] backbone.js
+- [ ] knockout.js
+- [ ] dojo.js
+- [ ] polymer
+- [ ] marionettejs
+- [ ] nuclear.js
+- [ ] seemple
+- [ ] spine
+- [ ] can js
+- [ ] knockback.js
+- [ ] hyperapp.js
+- [ ] riot.js
+- [ ] neo.mjs
+- [ ] refine.js

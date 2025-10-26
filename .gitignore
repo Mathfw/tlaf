@@ -1,1 +1,45 @@
-./vanilla-es5/node_modules/
+vanilla-es5/# Logs
+vanilla-es5/logs
+vanilla-es5/*.log
+vanilla-es5/npm-debug.log*
+vanilla-es5/yarn-debug.log*
+vanilla-es5/yarn-error.log*
+vanilla-es5/pnpm-debug.log*
+vanilla-es5/lerna-debug.log*
+vanilla-es5/node_modules
+vanilla-es5/dist
+vanilla-es5/dist-ssr
+vanilla-es5/*.local
+vanilla-es5/# Editor directories and files
+vanilla-es5/.vscode/*
+vanilla-es5/!.vscode/extensions.json
+vanilla-es5/.idea
+vanilla-es5/.DS_Store
+vanilla-es5/*.suo
+vanilla-es5/*.ntvs*
+vanilla-es5/*.njsproj
+vanilla-es5/*.sln
+vanilla-es5/*.sw?
+
+
+# Logs
+svelte/logs
+svelte/*.log
+svelte/npm-debug.log*
+svelte/yarn-debug.log*
+svelte/yarn-error.log*
+svelte/pnpm-debug.log*
+svelte/lerna-debug.log*
+svelte/node_modules
+svelte/dist
+svelte/dist-ssr
+svelte/*.local
+svelte/# Editor directories and files
+svelte/.vscode/*
+svelte/!.vscode/extensions.json
+svelte/.idea
+svelte/.DS_Store
+svelte/*.suo
+svelte/*.ntvs*
+svelte/*.njsproj
+svelte/*.sln

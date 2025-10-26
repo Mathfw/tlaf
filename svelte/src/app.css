@@ -1,0 +1,54 @@
+:root {
+   font-size: 1rem;
+   font-family: "Source Sans 3", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+
+   --background-100: hsla(50, 0%, 80%, 100%);
+   --background-200: hsla(50, 0%, 70%, 100%);
+   --background-300: hsla(50, 0%, 60%, 100%);
+
+   --foreground-100: hsla(50, 0%, 10%, 100%);
+   --foreground-200: hsla(50, 0%, 15%, 100%);
+   --foreground-300: hsla(50, 0%, 20%, 100%);
+
+   --error: hsla(350, 70%, 50%, 100%);
+   --success: hsla(150, 60%, 40%, 100%);
+
+   --theme: light;
+   color-scheme: light;
+
+   @media (prefers-color-scheme: dark) {
+      --theme: dark;
+      color-scheme: dark;
+   }
+}
+
+body {
+   background-color: var(--background-100);
+   color: var(--foreground-100);
+
+   @container style(--theme: dark) {
+      --background-100: hsla(50, 0%, 10%, 100%);
+      --background-200: hsla(50, 0%, 15%, 100%);
+      --background-300: hsla(50, 0%, 20%, 100%);
+
+      --foreground-100: hsla(50, 0%, 80%, 100%);
+      --foreground-200: hsla(50, 0%, 70%, 100%);
+      --foreground-300: hsla(50, 0%, 60%, 100%);
+
+      background-color: var(--background-100);
+      color: var(--foreground-100);
+   }
+}
+
+:root:has([value="light"]:checked) {
+   --theme: light;
+   color-scheme: light;
+}
+
+:root:has([value="dark"]:checked) {
+   --theme: dark;
+   color-scheme: dark;
+}

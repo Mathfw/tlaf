@@ -5,8 +5,10 @@
 - [x] add
 - [x] delete
 - [x] edit
-- [ ] Persit data
+- [ ] check
+- [x] Persit data
 
 ## Improvements
 
+- [ ] styles
 - [ ] theme switch
